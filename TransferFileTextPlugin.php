@@ -37,7 +37,7 @@ class TransferFileTextPlugin extends Omeka_Plugin_AbstractPlugin
     public function hookAfterSaveItem($args)
     {
         $item = $args['record'];
-        transferFileText($item);
+        $this->transferFileText($item);
     }
 
 
